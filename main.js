@@ -92,4 +92,4 @@ function game() {
     }
 }
 
-game();
+//game();

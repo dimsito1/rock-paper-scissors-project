@@ -1,0 +1,83 @@
+* {
+    font-family: 'DK Cool Crayon', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(40, 31, 43);
+    height: 100vh;
+}
+
+.header-container {
+    text-decoration: underline;
+    text-shadow: 5px 1px 5px rgb(0, 0, 0);
+    font-weight: 500;
+    color: white;
+    font-size: 3rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+strong {
+    color:rgba(53, 202, 33, 0.753);
+}
+
+.middle-container {
+    background-color: rgb(30, 24, 32);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.rock-container, 
+.paper-container,
+.scissors-container {
+    border: 3px solid rgba(0, 0, 0, 0.027);
+}
+
+.rock-container img,
+.paper-container img,
+.scissors-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.choices-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    display: flex;
+}
+
+.choices-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10rem;
+    width: 10rem;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.lower-container {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 10px;
+    color:rgb(223, 223, 223);
+    text-align: center;
+}
+
+.best-of-five {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.choose {
+    font-size: 2rem;
+}
