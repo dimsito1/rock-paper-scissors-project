@@ -9,6 +9,7 @@
     --background: rgb(40, 31, 43);
     --base: rgb(30, 24, 32);
     --textColor: rgb(223, 223, 223);
+    --pink: rgba(255, 46, 227, 0.753);
 }
 
 body {
@@ -41,7 +42,8 @@ body {
 
 
 strong {
-    color:rgba(255, 46, 227, 0.753);
+    color: var(--pink);
+    font-size:larger;
 }
 
 .middle-container {
@@ -50,7 +52,7 @@ strong {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     color: rgb(223, 223, 223);
     text-align: center;
 }
@@ -59,9 +61,9 @@ strong {
 .paper-container,
 .scissors-container {
     border: 10px solid rgba(0, 0, 0, 0.329);
+    box-shadow: rgba(0, 0, 0, 0.363) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
     transition: transform .2s;
-    box-shadow: rgba(0, 0, 0, 0.363) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .rock-container img,
@@ -90,7 +92,6 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 10rem;
     width: 10rem;
     background-color: var(--base);
@@ -119,6 +120,7 @@ strong {
 }
 
 .bottom-container {
+    padding: 30px;
     margin: 0 auto;
     width: 50rem;
     height: 10rem;
@@ -142,4 +144,111 @@ strong {
     display: flex;
     justify-content: center;
     gap: 25rem;
+}
+
+.playing {
+    gap: 7rem;
+    display: flex;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: rgb(223, 223, 223);
+    text-align: center;
+}
+
+.player-playing,
+.computer-playing {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+
+.player-playing img,
+.computer-playing img {
+    cursor: default !important;
+    height: 140px;
+    width: 140px;
+    cursor: pointer;
+    transition: transform .2s;
+    box-sizing: border-box;
+}
+
+.player-playing img {
+    border: 7px solid rgba(59, 138, 63, 0.329);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.computer-playing img {
+    border: 7px solid rgba(146, 18, 18, 0.329);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.winning-screen,
+.losing-screen {
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.winning-screen {
+    color: rgb(177, 255, 131);
+}
+
+.losing-screen {
+    color: rgb(255, 136, 136);
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animation-text {
+    justify-content: center;
+    align-items: center;
+    animation: slide-in 2s;
+    font-size: 120px;
+    font-weight: 900;
+}
+
+.try-again {
+    color: white;
+    background-color: var(--pink);
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
 }
