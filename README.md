@@ -2,18 +2,18 @@
 
 Description:
 
-A simple and interactive Rock-Paper-Scissors game built with HTML, CSS, and JavaScript. Players can compete against a computer opponent in a best-of-five challenge, clicking on their chosen symbol (rock, paper, or scissors) to see if they can outsmart the computer!
+In a battle of wits between man and machine, your HTML, CSS and JavaScript skills will be put to the test with a game of Rock-Paper-Scissors. Players must click their preferred hand sign (rock, paper, or scissors) to defeat the computer in a high stakes best-of-five challenge.
 
 Features:
 
-    -Interactive Gameplay: Click-to-play mechanics making user interactions intuitive.
-    -Best of Five: Extend the fun with multiple rounds to declare the ultimate winner.
-    -Minimalist Design: Clean and distraction-free UI to focus on the game.
-    -Responsive: Adapts to various screen sizes for a seamless gaming experience on any device.
+-Intuitive user interactions are made possible with click-to-play mechanics in interactive gameplay.
+-Multiple rounds will ensure the ultimate winner is declared, so let's extend the fun with a Best of Five format.
+-To allow for maximum immersion, the UI of minimalist design is purposely clean and devoid of any distractions.
+-On any device, a seamless gaming experience is possible with the ability to adapt to various screen sizes. This is all thanks to its responsiveness.
 
-How to Play:
+To start playing, here are the steps you need to follow.
 
-    -Load the game in your preferred browser.
-    -Click on either Rock, Paper, or Scissors.
-    -Watch the computer make its choice and see if you've won!
-    -The game continues for five rounds or until a player achieves three wins, whichever comes first.
+-Your preferred browser is where you should load the game.
+-Scissors, Rock, or Paper - one of these choices must be clicked.
+-Watch the computer's choice and see if you've won the round.
+-Whichever comes first, the game will continue for five rounds or until a player has earned three wins.
