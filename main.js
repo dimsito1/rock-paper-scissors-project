@@ -78,7 +78,6 @@ function getGameOver(playerWonBool) {
     const tryAgain = document.querySelector('.try-again');
     
     tryAgain.addEventListener('click', function() {
-        console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
         playerWon = false;
         gameOver = false;
         playerPoints = 0;
